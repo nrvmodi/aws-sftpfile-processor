@@ -1,0 +1,9 @@
+Resources:
+  AwsSftpFileProcessorFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+    Runtime: java8
+    Environment:
+      Variables:
+        POWERTOOLS_LOG_LEVEL: DEBUG
+        POWERTOOLS_SERVICE_NAME: aws-sftpfile-processor

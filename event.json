@@ -1,0 +1,21 @@
+{
+  "token": "MzI0Nzc4ZDktMGRmMi00MjFhLTgxMjUtYWZmZmRmODNkYjc0",
+  "serviceMetadata": {
+    "executionDetails": {
+      "workflowId": "w-1234567890example",
+      "executionId": "abcd1234-aa11-bb22-cc33-abcdef123456"
+    },
+    "transferDetails": {
+      "sessionId": "36688ff5d2deda8c",
+      "userName": "myuser",
+      "serverId": "s-example1234567890"
+    }
+  },
+  "fileLocation": {
+    "domain": "S3",
+    "bucket": "DOC-EXAMPLE-BUCKET",
+    "key": "path/to/mykey",
+    "eTag": "d8e8fca2dc0f896fd7cb4cb0031ba249",
+    "versionId": null
+  }
+}
