@@ -35,20 +35,13 @@
             <artifactId>aws-lambda-java-core</artifactId>
             <version>1.2.1</version>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>com.amazonaws</groupId>-->
-        <!--            <artifactId>aws-lambda-java-events</artifactId>-->
-        <!--            <version>3.11.0</version>-->
-        <!--        </dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-transfer</artifactId>
             <version>1.12.300</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
