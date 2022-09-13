@@ -11,13 +11,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import software.amazon.lambda.powertools.logging.Logging;
 
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class LambdaHandler implements RequestHandler<Map, Object> {
 
-    Logger log = LogManager.getLogger();
+    private static Logger log = LogManager.getLogger(LambdaHandler.class);
 
     @Override
     @Logging
@@ -68,7 +69,7 @@ public class LambdaHandler implements RequestHandler<Map, Object> {
         return response;
     }
 
-    private void doFileProcess(Map event) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+    private void doFileProcess(Map event) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException, IOException {
         FileProcessorService fileProcessorService = new FileProcessorService();
         fileProcessorService.processFile(event);
     }

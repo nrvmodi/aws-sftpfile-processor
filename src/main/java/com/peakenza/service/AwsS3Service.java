@@ -13,7 +13,7 @@ public class AwsS3Service {
 
     private static final S3Client s3Client = AwsS3Util.getS3Client();
 
-    public void readFile(String bucketName, String fileName) throws IOException {
+    public ResponseInputStream readFile(String bucketName, String fileName) throws IOException {
 
         GetObjectRequest getObjectRequest = GetObjectRequest.builder()
                 .bucket(bucketName)
@@ -23,5 +23,6 @@ public class AwsS3Service {
         ResponseInputStream responseInputStream = s3Client.getObject(getObjectRequest);
         byte[] bytes = IOUtils.toByteArray(responseInputStream);
         System.out.println("Content :" + new String(bytes, StandardCharsets.UTF_8));
+        return responseInputStream;
     }
 }
