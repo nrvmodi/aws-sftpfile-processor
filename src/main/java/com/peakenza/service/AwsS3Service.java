@@ -21,8 +21,8 @@ public class AwsS3Service {
                 .build();
 
         ResponseInputStream responseInputStream = s3Client.getObject(getObjectRequest);
-        byte[] bytes = IOUtils.toByteArray(responseInputStream);
-        System.out.println("Content :" + new String(bytes, StandardCharsets.UTF_8));
+//        byte[] bytes = IOUtils.toByteArray(responseInputStream);
+//        System.out.println("Content :" + new String(bytes, StandardCharsets.UTF_8));
         return responseInputStream;
     }
 }
